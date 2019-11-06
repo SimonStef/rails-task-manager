@@ -1,0 +1,6 @@
+  <section class="task">
+        <h1><%= @task.title %></h1>
+        <h4 class="task-details"><%= @task.details %></h4>
+        <input type="checkbox" name="completed" disabled <%= 'checked' if @task.completed %>>
+        <%= link_to "go back to list", tasks_path %>
+  </section>
